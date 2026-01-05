@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Raj Gupta's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header id="about" class="profile-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQd3ruVYrDjRZ2joWW6Rff-y1OgTIHXZo_A&s" alt="Profile" class="profile-img">
+            <h1>Hi, I'm Aditya Raj Gupta</h1>
+            <p class="bio">
+               IIT Roorkee | Production & Industrial Engineering <br>
+         Engineering student with a focus on systems and optimization. <br>
+         Cinephile and bodybuilding enthusiast. Strategic thinker on and off the chessboard.<br>
+         Bridging the gap between technical logic, physical discipline, and creative storytelling.
+            </p>
+        </header>
+
+        <section id="dapp" class="storage">
+            <h2>Solidity SimpleStorage</h2>
+            <p>Enter a number to store it on the blockchain.</p>
+            
+            <div id="connection-status" class="status-indicator">
+                Status: Not Connected
+            </div>
+
+            <div class="interaction-area">
+                <input type="number" id="numberInput" placeholder="Enter number...">
+                <button onclick="storeValue()">Set Number</button>
+            </div>
+
+            <div class="display-box">
+                <small>Current Stored Value</small>
+                <div id="displayValue">0</div>
+            </div>
+            
+            <button class="secondary-btn" onclick="getValue()">Refresh from Chain</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
